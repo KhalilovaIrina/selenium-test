@@ -32,9 +32,9 @@ class HappyPath {
     }
 
     @Test
-    void test() {
+    void PositiveTest() {
         driver.get("http://localhost:9999/");
-        driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Халилова Ирина");
+        driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Халилова-Шарова Ирина");
         driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+79189871057");
         driver.findElement(By.cssSelector("[data-test-id=agreement]")).click();
         driver.findElement(By.className("button__content")).click();

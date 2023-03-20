@@ -13,7 +13,7 @@ class HappyPath {
 
     @BeforeAll
     static void setupAll() {
-        driver = WebDriverManager.chromedriver().create();
+        WebDriverManager.chromedriver().setup();
     }
 
     @BeforeEach
@@ -28,6 +28,7 @@ class HappyPath {
     @AfterEach
     void teardown() {
         driver.quit();
+        if (driver == null);
     }
 
     @Test
